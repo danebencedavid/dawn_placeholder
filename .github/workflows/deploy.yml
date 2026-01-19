@@ -1,0 +1,13 @@
+name: Trigger Vercel Update
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  ping-vercel:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Vercel Hook
+        run: |
+          curl -X POST "${{ secrets.VERCEL_DEPLOY_HOOK_URL }}"
