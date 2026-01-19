@@ -2,34 +2,203 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Dawn of Deter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dawn of Deter | Player Primer</title>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --gold: #e6d5a3;
+      --bg: #1a120b;
+      --accent: #3c2a21;
+      --text-muted: rgba(230, 213, 163, 0.7);
+    }
+
     body {
       margin: 0;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #1a120b;
-      color: #e6d5a3;
+      padding: 0;
+      background: var(--bg);
+      color: var(--gold);
       font-family: "IM Fell English", serif;
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 800px;
+      padding: 4rem 2rem;
+      text-align: left;
+    }
+
+    header {
       text-align: center;
+      border-bottom: 1px solid var(--accent);
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
     }
+
     h1 {
-      font-size: 3rem;
-      letter-spacing: 0.15em;
+      font-size: 3.5rem;
+      letter-spacing: 0.2em;
+      margin: 0;
+      text-transform: uppercase;
     }
-    p {
-      margin-top: 1rem;
-      opacity: 0.7;
+
+    h2 {
+      font-size: 2rem;
+      border-bottom: 1px solid var(--accent);
+      margin-top: 3rem;
+      padding-bottom: 0.5rem;
+      letter-spacing: 0.05em;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      color: var(--gold);
+      margin-top: 2rem;
+    }
+
+    .subtitle {
+      font-style: italic;
       font-size: 1.2rem;
+      opacity: 0.8;
+      margin-top: 0.5rem;
+    }
+
+    p, li {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+    }
+
+    strong {
+      color: var(--gold);
+    }
+
+    .callout {
+      background: rgba(60, 42, 33, 0.3);
+      padding: 1.5rem;
+      border-left: 3px solid var(--gold);
+      margin: 2rem 0;
+      font-style: italic;
+    }
+
+    ul {
+      list-style-type: square;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      .grid { grid-template-columns: 1fr; }
+      h1 { font-size: 2.2rem; }
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 5rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--accent);
+      font-size: 0.9rem;
+      opacity: 0.5;
     }
   </style>
 </head>
 <body>
-  <div>
+
+<div class="container">
+  <header>
     <h1>DAWN OF DETER</h1>
-    <p>The Dawn Approaches.</p>
-  </div>
+    <div class="subtitle">Player Primer & Character Creation Guide</div>
+    <p>This document contains everything your character would reasonably know before the campaign begins.</p>
+  </header>
+
+  <section>
+    <h2>THE WORLD AT A GLANCE</h2>
+    <p>You live in a time of order, not peace.</p>
+    <p>The <strong>Sun and Holy Church</strong> stands as the dominant religious and moral authority across much of the known land. Its symbols are everywhere: chapels at crossroads, blessings before meals, prayers at dawn.</p>
+    <p>Most people live ordinary lives. Crops grow. Roads function. Trade flows.</p>
+  </section>
+
+  <section>
+    <h2>THE SUN AND HOLY CHURCH</h2>
+    <p>The Sun is believed to be the source of life, the final judge, and the protector of the realm. The Church teaches that obedience preserves order, faith brings safety, and deviation invites catastrophe.</p>
+    
+    <h3>Important Social Truths</h3>
+    <ul>
+      <li>Clergy are respected, but increasingly guarded.</li>
+      <li>Public doubt is frowned upon, not punished.</li>
+      <li>The Church is not monolithic — individual priests vary greatly.</li>
+    </ul>
+    <p class="callout">You do not need to be religious to exist in this world, but you cannot ignore the Church’s presence.</p>
+  </section>
+
+  <section>
+    <h2>RACE & HERITAGE</h2>
+    <p>All common fantasy ancestries exist, but the social landscape is shifting:</p>
+    <ul>
+      <li><strong>Humans</strong> dominate positions of power.</li>
+      <li><strong>Non-humans</strong> (elves, dwarves, etc.) are tolerated, but increasingly scrutinized.</li>
+      <li><strong>Mixed heritage</strong> is uncommon and often undocumented.</li>
+    </ul>
+    <p>You may play any ancestry; just understand that how the world reacts to you may change.</p>
+  </section>
+
+  <section>
+    <h2>MAGIC IN THE WORLD</h2>
+    <div class="grid">
+      <div>
+        <h3>Divine Magic</h3>
+        <p>Publicly accepted and regulated by the Church. It is expected to align with holy doctrine.</p>
+      </div>
+      <div>
+        <h3>Arcane Magic</h3>
+        <p>Legal, but watched. Often practiced discreetly and associated with old knowledge.</p>
+      </div>
+    </div>
+    <p><strong>Note:</strong> Magic is functional, not flashy. It solves problems—but often introduces new ones.</p>
+  </section>
+
+  <section>
+    <h2>CHARACTER ORIGINS</h2>
+    <p>When creating your character, consider one of the following foundations:</p>
+    <ul>
+      <li>Lived near a chapel or monastery.</li>
+      <li>Benefited from Church aid in the past.</li>
+      <li>Avoided the Church intentionally.</li>
+      <li>Know someone who fears upcoming changes.</li>
+      <li>Have seen something that didn’t quite make sense.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>CLASSES & FIT</h2>
+    <p>All official classes are allowed. Here is how they fit the world's current tension:</p>
+    <ul>
+      <li><strong>Clerics / Paladins:</strong> Expected to follow doctrine; faith does not always equal obedience.</li>
+      <li><strong>Wizards / Sorcerers / Warlocks:</strong> Viewed with curiosity or suspicion; power has social consequences.</li>
+      <li><strong>Rangers / Druids:</strong> Often distrust urban authority; sensitive to environmental imbalance.</li>
+      <li><strong>Rogues / Fighters / Monks / Bards:</strong> Deeply tied to social change; the first to notice pressure on the common people.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>ALIGNMENT & MORALITY</h2>
+    <p>This campaign does not assume the Church is evil, nor that rebellion is inherently good. You will be asked to:</p>
+    <ul>
+      <li>Make decisions with incomplete information.</li>
+      <li>Choose between safety and truth.</li>
+      <li>Live with consequences that are not immediately visible.</li>
+    </ul>
+  </section>
+
+  <footer>
+    The Dawn Approaches.
+  </footer>
+</div>
+
 </body>
 </html>
